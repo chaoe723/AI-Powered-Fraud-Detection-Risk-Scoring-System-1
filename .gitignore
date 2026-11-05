@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Agent workspace (private, not part of the project)
+.commandcode/
+
+# Raw Kaggle downloads (large, regenerable from source)
+data/kaggle/
+# v1 storage (SQLite) — demo database is regenerable
+data/*.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local temp artifacts
+tmp_page_*.png
+tmp_shots/
+chapter3_full.zip

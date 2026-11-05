@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" modified="2026-10-05T13:50:00.000Z" agent="Mozilla/5.0" version="24.0.0" type="device">
+  <diagram id="usecase_overview" name="Biểu đồ Use Case tổng quát">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary -->
+        <mxCell id="boundary" value="HỆ THỐNG PHÁT HIỆN GIAN LẬN AI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=15;spacingTop=10;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="460" height="480" as="geometry" />
+        </mxCell>
+
+        <!-- Actors -->
+        <mxCell id="actor_user" value="Người phân tích" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="50" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_admin" value="Quản trị viên" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="240" width="50" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Use Cases -->
+        <mxCell id="uc_upload" value="Tải file &amp;amp; Phân tích" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="270" y="130" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_job" value="Chạy phiên AI" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="130" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_dashboard" value="Xem Dashboard" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="270" y="220" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_txns" value="Tra cứu giao dịch" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="270" y="310" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_why" value="Xem chi tiết Why?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="270" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_export" value="Xuất báo cáo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_history" value="Quản lý lịch sử" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_model" value="Xem thông tin Model" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="490" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Connections User -->
+        <mxCell id="edge_u1" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_user" target="uc_upload">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u2" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_user" target="uc_dashboard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u3" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_user" target="uc_txns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u4" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_user" target="uc_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Connections Admin -->
+        <mxCell id="edge_a1" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_admin" target="uc_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a2" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;" edge="1" parent="1" source="actor_admin" target="uc_model">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Includes / Extends -->
+        <mxCell id="edge_inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;strokeColor=#000000;strokeWidth=1.2;endArrow=open;endSize=8;fontSize=10;" edge="1" parent="1" source="uc_upload" target="uc_job">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ext1" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;strokeColor=#000000;strokeWidth=1.2;endArrow=open;endSize=8;fontSize=10;" edge="1" parent="1" source="uc_why" target="uc_txns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ext2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;strokeColor=#000000;strokeWidth=1.2;endArrow=open;endSize=8;fontSize=10;" edge="1" parent="1" source="uc_export" target="uc_txns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" modified="2026-10-05T14:26:00.000Z" agent="Mozilla/5.0" version="24.0.0" type="device">
+  <diagram id="activity_txns" name="Biểu đồ hoạt động Tra cứu giao dịch">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Header -->
+        <mxCell id="t_hdr_title" value="QUY TRÌNH TRA CỨU VÀ LỌC GIAO DỊCH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontSize=13;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_hdr_u" value="Người phân tích" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_hdr_s" value="Hệ thống" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="380" y="70" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Divider -->
+        <mxCell id="t_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="600" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="t_div" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="100" as="sourcePoint" />
+            <mxPoint x="380" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Nodes -->
+        <mxCell id="t_start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="215" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_open" value="Vào trang Giao dịch" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="150" y="180" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_render" value="Hiển thị 20 dòng mặc định" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_action" value="Thao tác?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="165" y="260" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t_filter" value="Đặt bộ lọc / tìm kiếm" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="150" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_query" value="Lọc CSDL &amp;amp; Cập nhật bảng" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="450" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_detail" value="Chọn xem chi tiết giao dịch" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="150" y="440" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_end" value="" style="shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="215" y="510" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="te1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_start" target="t_open">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="te2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_open" target="t_render">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="te3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_render" target="t_action">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="240" />
+              <mxPoint x="230" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="te4" value="Lọc" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_action" target="t_filter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="te5" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_filter" target="t_query">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="te6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_query" target="t_action">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="380" />
+              <mxPoint x="640" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="te7" value="Chi tiết" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="t_action" target="t_detail">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="290" />
+              <mxPoint x="110" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="te8" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="t_detail" target="t_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

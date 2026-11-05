@@ -1,0 +1,22 @@
+{
+  "model_version": "kaggle-v5",
+  "dataset": "kartik2112/fraud-detection",
+  "feature_count": 34,
+  "categorical_features": [
+    "merchant_category"
+  ],
+  "raw_identifier_excluded_from_model": [
+    "merchant_id"
+  ],
+  "probability_calibration": "platt_sigmoid_on_temporal_calibration_window",
+  "pr_auc_calibration": 0.9544886610602171,
+  "roc_auc_calibration": 0.9980438565845946,
+  "pr_auc_threshold": 0.9589291187187089,
+  "roc_auc_threshold": 0.9967512050804503,
+  "validation_cost": 7756.0,
+  "costs": {
+    "false_negative": 100,
+    "false_positive": 2,
+    "true_positive_review": 1
+  }
+}

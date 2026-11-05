@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" modified="2026-10-05T14:22:00.000Z" agent="Mozilla/5.0" version="24.0.0" type="device">
+  <diagram id="activity_dashboard" name="Biểu đồ hoạt động Dashboard &amp; Polling">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Header -->
+        <mxCell id="d_hdr_title" value="QUY TRÌNH THEO DÕI TIẾN ĐỘ VÀ XEM DASHBOARD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontSize=13;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hdr_u" value="Người phân tích" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d_hdr_s" value="Hệ thống" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#000000;strokeWidth=1.5;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="380" y="70" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="600" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="d_div" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=1;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="100" as="sourcePoint" />
+            <mxPoint x="380" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Nodes -->
+        <mxCell id="d_start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="215" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d_open" value="Mở Dashboard phiên phân tích" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="145" y="180" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d_status" value="Trạng thái?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="465" y="170" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d_poll" value="Hiện tiến độ &amp;amp; Đợi 1s poll lại" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="450" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d_show" value="Hiển thị KPI &amp;amp; Biểu đồ" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="450" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d_view" value="Xem kết quả phân tích" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="150" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d_end" value="" style="shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="215" y="440" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="de1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_start" target="d_open">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_open" target="d_status">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de3" value="Đang xử lý" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_status" target="d_poll">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_poll" target="d_status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="290" />
+              <mxPoint x="640" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="de5" value="Hoàn tất" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="d_status" target="d_show">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="200" />
+              <mxPoint x="420" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="de6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_show" target="d_view">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="de7" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="d_view" target="d_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

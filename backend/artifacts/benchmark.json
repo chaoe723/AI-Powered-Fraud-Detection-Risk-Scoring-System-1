@@ -1,0 +1,36 @@
+{
+  "rows": 500000,
+  "feature_count": 34,
+  "split": "60/20/20 temporal",
+  "label_leakage_safe": true,
+  "threshold_features_use_future_labels": false,
+  "models": {
+    "logistic_regression": {
+      "fit_seconds": 0.867,
+      "predict_seconds": 0.031,
+      "threshold_top_1pct": 0.9495859720103234,
+      "pr_auc": 0.32273718175478966,
+      "roc_auc": 0.9749045342944898,
+      "precision_at_top_1pct": 0.29,
+      "recall_at_top_1pct": 0.7493540051679587
+    },
+    "random_forest": {
+      "fit_seconds": 138.657,
+      "predict_seconds": 1.239,
+      "threshold_top_1pct": 0.09517091259579687,
+      "pr_auc": 0.8267666915858045,
+      "roc_auc": 0.9911335161649226,
+      "precision_at_top_1pct": 0.336,
+      "recall_at_top_1pct": 0.8682170542635659
+    },
+    "hist_gradient_boosting": {
+      "fit_seconds": 7.42,
+      "predict_seconds": 0.802,
+      "threshold_top_1pct": 0.5569421114113415,
+      "pr_auc": 0.8214444301742457,
+      "roc_auc": 0.9948374369014806,
+      "precision_at_top_1pct": 0.34,
+      "recall_at_top_1pct": 0.8785529715762274
+    }
+  }
+}

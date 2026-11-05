@@ -1,0 +1,30 @@
+{
+  "production_model": "random_forest",
+  "reason": "highest PR-AUC in the leakage-safe 500000-row temporal benchmark; HGB remains the fast fallback with stronger ROC-AUC and top-1% recall",
+  "fallback_model": "hist_gradient_boosting",
+  "baseline_model": "logistic_regression",
+  "benchmark_rows": 500000,
+  "benchmark": {
+    "random_forest": {
+      "pr_auc": 0.8267666915858045,
+      "roc_auc": 0.9911335161649226,
+      "precision_at_top_1pct": 0.336,
+      "recall_at_top_1pct": 0.8682170542635659,
+      "fit_seconds": 138.657
+    },
+    "hist_gradient_boosting": {
+      "pr_auc": 0.8214444301742457,
+      "roc_auc": 0.9948374369014806,
+      "precision_at_top_1pct": 0.34,
+      "recall_at_top_1pct": 0.8785529715762274,
+      "fit_seconds": 7.42
+    },
+    "logistic_regression": {
+      "pr_auc": 0.32273718175478966,
+      "roc_auc": 0.9749045342944898,
+      "precision_at_top_1pct": 0.29,
+      "recall_at_top_1pct": 0.7493540051679587,
+      "fit_seconds": 0.867
+    }
+  }
+}

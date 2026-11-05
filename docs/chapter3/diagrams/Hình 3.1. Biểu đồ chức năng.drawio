@@ -1,0 +1,33 @@
+<mxfile host="app.diagrams.net" modified="2026-10-05T14:32:00.000Z" agent="Mozilla/5.0" version="24.0.0" type="device">
+  <diagram id="function_diagram" name="Biểu đồ chức năng">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Root Function -->
+        <mxCell id="fn_root" value="HỆ THỐNG AI PHÁT HIỆN GIAN LẬN&#xa;VÀ CHẤM ĐIỂM RỦI RO GIAO DỊCH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8e8e8;strokeColor=#000000;strokeWidth=2;fontStyle=1;fontSize=13;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="320" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Group 1: Analyst -->
+        <mxCell id="fn_g1" value="Người phân tích&#xa;&#xa;1. Quản lý phiên phân tích (upload / lịch sử / xóa)&#xa;2. Chạy và theo dõi phân tích (chọn threshold_profile)&#xa;3. Tra cứu giao dịch và giải thích Why?&#xa;4. Xuất kết quả CSV/XLSX" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=15;fillColor=#fcfcfc;strokeColor=#000000;strokeWidth=1.5;strokeDasharray=4 4;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="310" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- Group 2: Admin -->
+        <mxCell id="fn_g2" value="Quản trị viên&#xa;&#xa;5. Quản lý phiên phân tích (xem / xóa)&#xa;6. Theo dõi model và ngưỡng quyết định" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=15;fillColor=#fcfcfc;strokeColor=#000000;strokeWidth=1.5;strokeDasharray=4 4;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="310" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e_g1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="fn_root" target="fn_g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_g2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;" edge="1" parent="1" source="fn_root" target="fn_g2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

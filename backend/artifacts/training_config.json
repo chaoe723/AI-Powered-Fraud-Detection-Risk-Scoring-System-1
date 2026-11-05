@@ -1,0 +1,31 @@
+{
+  "split": "60/20/20 temporal; fraudTest final",
+  "no_raw_pii": true,
+  "random_split": false,
+  "splits": {
+    "fit": {
+      "start": "2019-01-01T00:00:18",
+      "end": "2019-11-29T19:37:11",
+      "rows": 778005,
+      "fraud_rate": 0.005893278320833414
+    },
+    "calibration": {
+      "start": "2019-11-29T19:37:13",
+      "end": "2020-03-06T07:15:17",
+      "rows": 259335,
+      "fraud_rate": 0.005332870611371392
+    },
+    "threshold": {
+      "start": "2020-03-06T07:16:43",
+      "end": "2020-06-21T12:13:37",
+      "rows": 259335,
+      "fraud_rate": 0.005930553145545337
+    },
+    "final_test": {
+      "start": "2020-06-21T12:14:25",
+      "end": "2020-12-31T23:59:34",
+      "rows": 555719,
+      "fraud_rate": 0.0038598644278853163
+    }
+  }
+}
